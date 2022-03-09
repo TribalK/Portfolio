@@ -1,0 +1,405 @@
+@import url("fontawesome-all.min.css");
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+    font-size: 100%;
+}
+
+html, body {
+    max-width: 100%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.container {
+  width: 100%;
+  padding-bottom: 8%;
+}
+
+header nav > * {
+  float: left;
+  width: 10%;
+  margin: 0 2%;
+  list-style: none;
+}
+
+nav {
+    padding-left: 40%;
+    text-align: right;
+}
+
+nav ul {
+  width: 80%;
+}
+
+ul li {
+  display: inline;
+  padding: 0 2.5%;
+}
+
+/******************************************
+/* TEXT SIZING
+/*******************************************/
+h1, h2 {
+    font-size: 3.8rem;
+    margin: 3.0% auto;
+    font-family: 'Yeseva One', cursive;
+}
+
+h2 {
+    font-size: 2.8rem;
+    margin: 0.5% 0 1.5% 0;
+}
+
+h4 {
+  font-family: 'Yeseva One', cursive;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+  margin: 1% 0;
+}
+
+span {
+  color: #ff8800;
+  margin: 0;
+}
+
+.Opening-Hours > section > h6+span {
+  font-size: 1.5rem;
+}
+
+.Specialty > ul li {
+  font-size: 1.1rem;
+}
+
+/******************************************
+/* SECTIONS
+/*******************************************/
+
+.social-links > div {
+  float: left;
+  width: 20%;
+  margin: 3.5vh 0;
+  font-size: 1.3rem;
+}
+
+.social-links > div > h5 {
+  display: inline;
+}
+
+.Specialty,
+.Opening-Hours,
+.Customer-Say {
+  text-align: center;
+  padding: 4% 0;
+}
+
+.food-pictures {
+  margin: 0 5%;
+}
+
+.food-pictures div {
+  background-image: url("../images/Avocado-Egg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  width: 22%;
+  margin: 1.5%;
+  height: 38vh;
+}
+
+.datetimes > .MonTue {
+  float: left;
+  width: 30%;
+}
+
+.datetimes > .FriSun {
+  float: right;
+  width: 30%;
+}
+
+.datetimes {
+  font-size: 1.4rem;
+  text-align: left;
+  padding: 0 20%
+}
+.Opening-Hours > aside img {
+  margin: 5% 5% 0 5%;
+  width: 50%;
+  height: 50vh;
+}
+
+.Specialty ul {
+  margin: 0;
+}
+
+.Specialty ul li {
+  border-bottom: 2px solid gray;
+}
+
+.Welcome > section {
+  width: 60%;
+  padding: 4.5% 6.5%;
+}
+
+.Discover > section {
+  width: 40%;
+  margin: 4.5% 40%;
+}
+
+.Discover > section > p {
+  line-height: 140%;
+}
+
+.Customer-Say > section > p {
+  font-size: 1.1rem;
+  margin: 0 10%;
+  font-style: italic;
+  line-height: 150%;
+}
+
+/******************************************
+/* LINKS
+/*******************************************/
+a {
+  text-decoration: none;
+}
+
+.food-pictures div > section {
+  display: none;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: linear-gradient(to bottom, rgba(125,125,125,0.6), rgba(125,125,125,0.6));
+}
+.food-pictures  > div:hover > section {
+  display: inline-block;
+}
+
+header nav a {
+  width: 3%;
+}
+
+/******************************************
+/* OBJECTS
+/*******************************************/
+.Welcome form > input[type="text"] {
+  width: 60%;
+  padding: 1.2vh;
+  color: gray;
+  caret-color: #ff8800;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+form > input[type="submit"] {
+  padding: 1.5vh;
+  background-color: #ff8800;
+  color: white;
+  border: none;
+  border-radius: 4%;
+}
+
+.Welcome form > input[type="submit"] {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.Discover form > input[type="submit"] {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.Discover form > input+input[type="submit"] {
+  border-top-right-radius: 4%;
+  border-bottom-right-radius: 4%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: rgba(255, 136, 0, 0.6);
+}
+
+.Specialty ul li:active {
+  border-bottom: 2px solid #ff8800;
+}
+
+.Hamburger {
+  display: none;
+}
+/******************************************
+/* Images
+/*******************************************/
+
+.food-pictures div > section > img {
+  width: 50%;
+}
+
+.link-image {
+  color: #ff8800;
+}
+
+.Hero > img {
+  width: 10%;
+}
+
+.Opening-Hours img {
+  width: 4%;
+}
+
+#TopCustomer {
+  border-radius: 100%;
+}
+
+/******************************************
+/* BACKGROUNDS
+/*******************************************/
+.Welcome {
+  background-image: url(../images/background-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Discover {
+  background: radial-gradient(ellipse at top, #fff, transparent), url(../images/background-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+@media all and (max-width: 426px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  nav {
+    padding: 0;
+  }
+
+  .Specialty > ul {
+    padding: 0;
+  }
+
+  .Specialty > ul li {
+    font-size: 1.0rem;
+  }
+
+  .food-pictures div {
+    width: 90%;
+  }
+
+  .Welcome > section ,
+  .Discover > section {
+    width: 100%;
+    padding: 4.5% 6.5%;
+    margin: 0;
+  }
+
+  .Discover {
+    background-image: none;
+  }
+
+  .datetimes {
+      padding: 0;
+  }
+
+  .datetimes > .MonTue,
+  .datetimes > .FriSun {
+      width: 100%;
+      text-align: center;
+      margin: 0;
+  }
+
+  .Opening-Hours > aside video {
+    display: none;
+  }
+
+  .Hero > img {
+    width: 25%;
+  }
+
+  .Hamburger div {
+    display: block;
+    width: 3vh;
+    height: 0.5vh;
+    margin-bottom: 6px;
+    background: #2f4457;
+  }
+
+  .Hamburger {
+    display: inline-block;
+    margin: 1.2% 3.6%;
+  }
+
+  header nav img {
+    width: 160%;
+  }
+  nav ul {
+    display: none;
+    width: 0;
+  }
+
+  .Opening-Hours > aside img {
+    width: 90%;
+  }
+}
+
+@media all and (min-width: 427px) and (max-width: 768px) {
+
+  nav {
+    padding-left: 0;
+  }
+
+  .Discover > section {
+    width: 50%;
+  }
+
+  .datetimes {
+      padding: 0 10%;
+  }
+
+  .datetimes > .MonTue,
+  .datetimes > .FriSun {
+      width: 50%;
+      text-align: center;
+      margin: 0;
+  }
+
+  .food-pictures div {
+    width: 45%;
+  }
+
+  .Opening-Hours > aside img {
+    width: 70%;
+  }
+}
