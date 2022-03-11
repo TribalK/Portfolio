@@ -120,18 +120,70 @@ span {
   padding: 4% 0;
 }
 
-.food-pictures {
-  margin: 0 5%;
+.food-pictures > section {
+  margin: 0 15%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .food-pictures div {
-  background-image: url("../images/Avocado-Egg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  float: left;
-  width: 22%;
+  width: 30%;
   margin: 1.5%;
   height: 38vh;
+}
+
+.food-pictures .hidden {
+  display: none;
+}
+
+#brkf-one {
+    background-image: url("../images/Avocado-Egg.jpg");
+}
+
+#brkf-two {
+    background-image: url("../images/fluffy-pancakes.jpg");
+}
+
+#brkf-three {
+    background-image: url("../images/hash-browns.jpeg");
+}
+
+#brkf-four {
+    background-image: url("../images/Western-Omelette.jpg");
+}
+
+#brkf-five {
+    background-image: url("../images/French-Toast.jpg");
+}
+
+#brkf-six {
+    background-image: url("../images/Fruit-Cup.jpg");
+}
+
+#lnch-one {
+    background-image: url("../images/Reuben-Sandwich.jpg");
+}
+
+#lnch-two {
+    background-image: url("../images/Air-Fried-Chicken-Tenders.jpg");
+}
+
+#lnch-three {
+    background-image: url("../images/Chicken-Breast-Sandwich.jpg");
+}
+
+#lnch-four {
+    background-image: url("../images/Shrimp-Scampi.jpg");
+}
+
+#lnch-five {
+    background-image: url("../images/Vegetable-Quesadilla.jpg");
+}
+
+#lnch-six {
+    background-image: url("../images/Classic-Minestrone-Soup.jpg");
 }
 
 .datetimes > .MonTue {
@@ -157,6 +209,7 @@ span {
 
 .Specialty ul {
   margin: 0;
+  padding: 0;
 }
 
 .Specialty ul li {
@@ -198,7 +251,7 @@ a {
   color: white;
   background: linear-gradient(to bottom, rgba(125,125,125,0.6), rgba(125,125,125,0.6));
 }
-.food-pictures  > div:hover > section {
+.food-pictures div:hover > section {
   display: inline-block;
 }
 
@@ -244,8 +297,9 @@ form > input[type="submit"] {
   background-color: rgba(255, 136, 0, 0.6);
 }
 
-.Specialty ul li:active {
+.menu-choices:active {
   border-bottom: 2px solid #ff8800;
+  color: #ff8800;
 }
 
 .Hamburger {

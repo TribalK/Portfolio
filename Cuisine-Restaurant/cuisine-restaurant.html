@@ -32,7 +32,7 @@
     <section>
         <section>
             <h1>Welcome <br>To Our Cuisine Restaurant</h1>
-            <form action="cuisine-restaurant.html" method="post">
+            <form method="post">
                 <input type="text" name="SearchBox" placeholder="Search here"><!--
              --><input type="submit" name="LocationBtn" value="Location &#9660;">
             </form>
@@ -58,7 +58,7 @@
           <span>About us</span>
           <h2>Discover Our Restaurant Story</h2>
           <p>Ut eleifend bibendum dui eu eleifend. Nunc pellentesque nunc ipsum, sed pulvinar odio cursus ut. Praesent faucibus eleifend arcu, nec finibus felis placerat ut. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla turpis enim, vehicula ut leo ut, volutpat tempor turpis. Sed faucibus dignissim lectus eget convallis. Integer enim ligula, fringilla ac tempor vel, consequat et nulla. Suspendisse eu vehicula nisi, sed dignissim est. Maecenas sed aliquam enim, vitae vehicula lacus.</p>
-          <form class="Discover-Menu-Btn" action="cuisine-restaurant.html" method="post">
+          <form class="Discover-Menu-Btn" method="post">
             <input type="submit" name="DscvMenu" value="Discover Menu"><!--
          --><input type="submit" name="DscvMenu" value="&#8594;">
           </form>
@@ -68,93 +68,323 @@
       <span>Order Online Now</span>
       <h2>Our Specialty Cuisine</h2>
       <ul>
-        <li><a href="cuisine-restaurant.html">Breakfast</a></li><!--
-     --><li><a href="cuisine-restaurant.html">Lunch</a></li><!--
-     --><li><a href="cuisine-restaurant.html">Dinner</a></li><!--
-     --><li><a href="cuisine-restaurant.html">Dessert</a></li><!--
-     --><li><a href="cuisine-restaurant.html">Shake</a></li>
+        <li id="menu1" class="menu-choices">Breakfast</li><!--
+     --><li id="menu2" class="menu-choices">Lunch</li><!--
+     --><li id="menu3" class="menu-choices">Dinner</li><!--
+     --><li id="menu4" class="menu-choices">Dessert</li><!--
+     --><li id="menu5" class="menu-choices">Shake</li>
       </ul>
       <section class="food-pictures clearfix">
-          <div>
+        <section id="breakfast">
+          <div id="brkf-one">
               <section>
-                <h4>$14.99</h4>
+                <h4>$6.99</h4>
                 <img src="images/Five-Stars.jpg" alt="Five Stars">
                 <h3>Egg &#38; Avocado on Toast</h3>
-                <form action="cuisine-restaurant.html" method="post">
+                <form method="post">
                   <input type="submit" name="Order" value="Order Now">
                 </form>
               </section>
           </div>
-          <div>
+          <div id="brkf-two">
               <section>
-                <h4>$14.99</h4>
+                <h4>$8.29</h4>
                 <img src="images/Five-Stars.jpg" alt="Five Stars">
-                <h3>Egg &#38; Avocado on Toast</h3>
-                <form action="cuisine-restaurant.html" method="post">
+                <h3>Fluffy Pancakes</h3>
+                <form method="post">
                   <input type="submit" name="Order" value="Order Now">
                 </form>
               </section>
           </div>
-          <div>
+          <div id="brkf-three">
               <section>
-                <h4>$14.99</h4>
+                <h4>$3.99</h4>
                 <img src="images/Five-Stars.jpg" alt="Five Stars">
-                <h3>Egg &#38; Avocado on Toast</h3>
-                <form action="cuisine-restaurant.html" method="post">
+                <h3>Hash Browns</h3>
+                <form method="post">
                   <input type="submit" name="Order" value="Order Now">
                 </form>
               </section>
           </div>
-          <div>
+          <div id="brkf-four">
               <section>
                   <h4>$14.99</h4>
                   <img src="images/Five-Stars.jpg" alt="Five Stars">
-                  <h3>Egg &#38; Avocado on Toast</h3>
-                  <form action="cuisine-restaurant.html" method="post">
+                  <h3>Western Omelette</h3>
+                  <form method="post">
                     <input type="submit" name="Order" value="Order Now">
                   </form>
               </section>
           </div>
-          <div>
+          <div id="brkf-five">
               <section>
-                  <h4>$14.99</h4>
+                  <h4>$9.99</h4>
                   <img src="images/Five-Stars.jpg" alt="Five Stars">
-                  <h3>Egg &#38; Avocado on Toast</h3>
-                  <form action="cuisine-restaurant.html" method="post">
+                  <h3>French Toast</h3>
+                  <form method="post">
                     <input type="submit" name="Order" value="Order Now">
                   </form>
               </section>
           </div>
-          <div>
+          <div id="brkf-six">
               <section>
-                  <h4>$14.99</h4>
+                  <h4>$6.59</h4>
                   <img src="images/Five-Stars.jpg" alt="Five Stars">
-                  <h3>Egg &#38; Avocado on Toast</h3>
-                  <form action="cuisine-restaurant.html" method="post">
+                  <h3>Fruit Cup</h3>
+                  <form method="post">
                     <input type="submit" name="Order" value="Order Now">
                   </form>
               </section>
           </div>
-          <div>
+        </section>
+        <section id="lunch" class="hidden">
+          <div id="lnch-one">
+              <section>
+                <h4>$14.99</h4>
+                <img src="images/Five-Stars.jpg" alt="Five Stars">
+                <h3>Reuben Sandwich</h3>
+                <form method="post">
+                  <input type="submit" name="Order" value="Order Now">
+                </form>
+              </section>
+          </div>
+          <div id="lnch-two">
+              <section>
+                <h4>$14.99</h4>
+                <img src="images/Five-Stars.jpg" alt="Five Stars">
+                <h3>Air Fried Chicken Tenders</h3>
+                <form method="post">
+                  <input type="submit" name="Order" value="Order Now">
+                </form>
+              </section>
+          </div>
+          <div id="lnch-three">
+              <section>
+                <h4>$14.99</h4>
+                <img src="images/Five-Stars.jpg" alt="Five Stars">
+                <h3>Chicken Breast Sandwich</h3>
+                <form method="post">
+                  <input type="submit" name="Order" value="Order Now">
+                </form>
+              </section>
+          </div>
+          <div id="lnch-four">
               <section>
                   <h4>$14.99</h4>
                   <img src="images/Five-Stars.jpg" alt="Five Stars">
-                  <h3>Egg &#38; Avocado on Toast</h3>
-                  <form action="cuisine-restaurant.html" method="post">
+                  <h3>Shrimp Scampi</h3>
+                  <form method="post">
                     <input type="submit" name="Order" value="Order Now">
                   </form>
               </section>
           </div>
-          <div>
+          <div id="lnch-five">
               <section>
                   <h4>$14.99</h4>
                   <img src="images/Five-Stars.jpg" alt="Five Stars">
-                  <h3>Egg &#38; Avocado on Toast</h3>
-                  <form action="cuisine-restaurant.html" method="post">
+                  <h3>Vegetable Quesadillas</h3>
+                  <form method="post">
                     <input type="submit" name="Order" value="Order Now">
                   </form>
               </section>
           </div>
+          <div id="lnch-six">
+              <section>
+                  <h4>$14.99</h4>
+                  <img src="images/Five-Stars.jpg" alt="Five Stars">
+                  <h3>Classic Minestrone Soup</h3>
+                  <form method="post">
+                    <input type="submit" name="Order" value="Order Now">
+                  </form>
+              </section>
+          </div>
+        </section>
+        <section id="dinner" class="hidden">
+          <div id="dinr-one">
+              <section>
+                <h4>$14.99</h4>
+                <img src="images/Five-Stars.jpg" alt="Five Stars">
+                <h3>Egg &#38; Avocado on Toast</h3>
+                <form method="post">
+                  <input type="submit" name="Order" value="Order Now">
+                </form>
+              </section>
+          </div>
+          <div id="dinr-two">
+              <section>
+                <h4>$14.99</h4>
+                <img src="images/Five-Stars.jpg" alt="Five Stars">
+                <h3>Egg &#38; Avocado on Toast</h3>
+                <form method="post">
+                  <input type="submit" name="Order" value="Order Now">
+                </form>
+              </section>
+          </div>
+          <div id="dinr-three">
+              <section>
+                <h4>$14.99</h4>
+                <img src="images/Five-Stars.jpg" alt="Five Stars">
+                <h3>Egg &#38; Avocado on Toast</h3>
+                <form method="post">
+                  <input type="submit" name="Order" value="Order Now">
+                </form>
+              </section>
+          </div>
+          <div id="dinr-four">
+              <section>
+                  <h4>$14.99</h4>
+                  <img src="images/Five-Stars.jpg" alt="Five Stars">
+                  <h3>Egg &#38; Avocado on Toast</h3>
+                  <form method="post">
+                    <input type="submit" name="Order" value="Order Now">
+                  </form>
+              </section>
+          </div>
+          <div id="dinr-five">
+              <section>
+                  <h4>$14.99</h4>
+                  <img src="images/Five-Stars.jpg" alt="Five Stars">
+                  <h3>Egg &#38; Avocado on Toast</h3>
+                  <form method="post">
+                    <input type="submit" name="Order" value="Order Now">
+                  </form>
+              </section>
+          </div>
+          <div id="dinr-six">
+              <section>
+                  <h4>$14.99</h4>
+                  <img src="images/Five-Stars.jpg" alt="Five Stars">
+                  <h3>Egg &#38; Avocado on Toast</h3>
+                  <form method="post">
+                    <input type="submit" name="Order" value="Order Now">
+                  </form>
+              </section>
+          </div>
+        </section>
+        <section id="dessert" class="hidden">
+          <div id="dsrt-one">
+              <section>
+                <h4>$14.99</h4>
+                <img src="images/Five-Stars.jpg" alt="Five Stars">
+                <h3>Egg &#38; Avocado on Toast</h3>
+                <form method="post">
+                  <input type="submit" name="Order" value="Order Now">
+                </form>
+              </section>
+          </div>
+          <div id="dsrt-two">
+              <section>
+                <h4>$14.99</h4>
+                <img src="images/Five-Stars.jpg" alt="Five Stars">
+                <h3>Egg &#38; Avocado on Toast</h3>
+                <form method="post">
+                  <input type="submit" name="Order" value="Order Now">
+                </form>
+              </section>
+          </div>
+          <div id="dsrt-three">
+              <section>
+                <h4>$14.99</h4>
+                <img src="images/Five-Stars.jpg" alt="Five Stars">
+                <h3>Egg &#38; Avocado on Toast</h3>
+                <form method="post">
+                  <input type="submit" name="Order" value="Order Now">
+                </form>
+              </section>
+          </div>
+          <div id="dsrt-four">
+              <section>
+                  <h4>$14.99</h4>
+                  <img src="images/Five-Stars.jpg" alt="Five Stars">
+                  <h3>Egg &#38; Avocado on Toast</h3>
+                  <form method="post">
+                    <input type="submit" name="Order" value="Order Now">
+                  </form>
+              </section>
+          </div>
+          <div id="dsrt-five">
+              <section>
+                  <h4>$14.99</h4>
+                  <img src="images/Five-Stars.jpg" alt="Five Stars">
+                  <h3>Egg &#38; Avocado on Toast</h3>
+                  <form method="post">
+                    <input type="submit" name="Order" value="Order Now">
+                  </form>
+              </section>
+          </div>
+          <div id="dsrt-six">
+              <section>
+                  <h4>$14.99</h4>
+                  <img src="images/Five-Stars.jpg" alt="Five Stars">
+                  <h3>Egg &#38; Avocado on Toast</h3>
+                  <form method="post">
+                    <input type="submit" name="Order" value="Order Now">
+                  </form>
+              </section>
+          </div>
+        </section>
+        <section id="shake" class="hidden">
+          <div id="shke-one">
+              <section>
+                <h4>$14.99</h4>
+                <img src="images/Five-Stars.jpg" alt="Five Stars">
+                <h3>Egg &#38; Avocado on Toast</h3>
+                <form method="post">
+                  <input type="submit" name="Order" value="Order Now">
+                </form>
+              </section>
+          </div>
+          <div id="shke-two">
+              <section>
+                <h4>$14.99</h4>
+                <img src="images/Five-Stars.jpg" alt="Five Stars">
+                <h3>Egg &#38; Avocado on Toast</h3>
+                <form method="post">
+                  <input type="submit" name="Order" value="Order Now">
+                </form>
+              </section>
+          </div>
+          <div id="shke-three">
+              <section>
+                <h4>$14.99</h4>
+                <img src="images/Five-Stars.jpg" alt="Five Stars">
+                <h3>Egg &#38; Avocado on Toast</h3>
+                <form method="post">
+                  <input type="submit" name="Order" value="Order Now">
+                </form>
+              </section>
+          </div>
+          <div id="shke-four">
+              <section>
+                  <h4>$14.99</h4>
+                  <img src="images/Five-Stars.jpg" alt="Five Stars">
+                  <h3>Egg &#38; Avocado on Toast</h3>
+                  <form method="post">
+                    <input type="submit" name="Order" value="Order Now">
+                  </form>
+              </section>
+          </div>
+          <div id="shke-five">
+              <section>
+                  <h4>$14.99</h4>
+                  <img src="images/Five-Stars.jpg" alt="Five Stars">
+                  <h3>Egg &#38; Avocado on Toast</h3>
+                  <form method="post">
+                    <input type="submit" name="Order" value="Order Now">
+                  </form>
+              </section>
+          </div>
+          <div id="shke-six">
+              <section>
+                  <h4>$14.99</h4>
+                  <img src="images/Five-Stars.jpg" alt="Five Stars">
+                  <h3>Egg &#38; Avocado on Toast</h3>
+                  <form method="post">
+                    <input type="submit" name="Order" value="Order Now">
+                  </form>
+              </section>
+          </div>
+        </section>
       </section>
   </section>
   <section class="container Opening-Hours">
@@ -179,7 +409,7 @@
         <img src="images/fruit-bowl.jpg">
       </aside>
   </section>
-  <footer class="container Customer-Say">
+  <section class="container Customer-Say">
     <section>
         <span>Testimonials</span>
         <h2>Customer Say</h2>
@@ -193,6 +423,7 @@
 
         <p>Nam convallis metus eget orci fringilla, eu mattis sem egestas. In posuere pharetra nisl ac blandit. Quisque ut ultrices orci. Curabitur id sapien scelerisque, pulvinar arcu efficitur, consequat enim. Maecenas a turpis suscipit, finibus libero quis, blandit massa. In vitae dapibus nunc, id convallis neque. Donec dapibus nec massa eget pellentesque. Pellentesque sed feugiat lorem, commodo bibendum felis.</p>
     </section>
-  </footer>
+  </section>
+  <script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>
