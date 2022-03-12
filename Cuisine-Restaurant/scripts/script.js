@@ -1,38 +1,20 @@
 const menu = Array.from(document.getElementsByClassName('menu-choices'));
-let currMenuOpt = 1;
-let changeMenuOpt = 0;
+const menuOptions = ['breakfast', 'lunch', 'dinner', 'dessert', 'shake'];
 
-document.querySelector('#menu1').addEventListener('click', getBreakfast);
-document.querySelector('#menu2').addEventListener('click', getLunch);
-document.querySelector('#menu3').addEventListener('click', getDinner);
-document.querySelector('#menu4').addEventListener('click', getDessert);
-document.querySelector('#menu5').addEventListener('click', getShake);
+let currMenuOpt = 0;
 
-function getBreakfast() {
-  changeMenuOpt = 1;
-  showMenuOption();
-}
+menu.forEach(option => {option.addEventListener('click', function() {
+    showMenuOption(this.innerText.toLowerCase());
+  })
+})
 
-function getLunch() {
-  changeMenuOpt = 2;
-  showMenuOption();
-}
+// Change the display of the menu based on the selection of a new menu choice
+function showMenuOption(menuChoice) {
+  const originalMenuChoice = menuOptions[currMenuOpt];
+  let changeMenuOpt = menuOptions.indexOf(menuChoice);
 
-function getDinner() {
-  changeMenuOpt = 3;
-  showMenuOption();
-}
-
-function getDessert() {
-  changeMenuOpt = 4;
-  showMenuOption();
-}
-
-function getShake() {
-  changeMenuOpt = 5;
-  showMenuOption();
-}
-
-function showMenuOption() {
-
+  //Toggle original menu off and new menu on
+  document.getElementById(originalMenuChoice).classList.toggle('hidden');
+  document.getElementById(menuChoice).classList.toggle('hidden');
+  currMenuOpt = changeMenuOpt;
 }

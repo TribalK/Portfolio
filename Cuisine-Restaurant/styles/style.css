@@ -131,7 +131,14 @@ span {
   background-size: cover;
   width: 30%;
   margin: 1.5%;
-  height: 38vh;
+  height: 40vh;
+}
+
+.food-pictures div > section h3 {
+  font-size: 1.2em;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .food-pictures .hidden {
@@ -184,6 +191,78 @@ span {
 
 #lnch-six {
     background-image: url("../images/Classic-Minestrone-Soup.jpg");
+}
+
+#dinr-one {
+    background-image: url("../images/ribeye-steak.jpg");
+}
+
+#dinr-two {
+    background-image: url("../images/broiled-lobster-tail.jpg");
+}
+
+#dinr-three {
+    background-image: url("../images/pappardelle-carbonara.jpg");
+}
+
+#dinr-four {
+    background-image: url("../images/grilled-herb-crusted-chicken-breast.jpg");
+}
+
+#dinr-five {
+    background-image: url("../images/Cauliflower-Tacos-with-Cilantro-Sauce.jpg");
+}
+
+#dinr-six {
+    background-image: url("../images/Island-Duck-Mulberry-Mustard.JPG");
+}
+
+#dsrt-one {
+    background-image: url("../images/Strawberry-Cheesecake.jpg");
+}
+
+#dsrt-two {
+    background-image: url("../images/German-Jelly-Donuts.jpg");
+}
+
+#dsrt-three {
+    background-image: url("../images/Chocolate-Fudge-Brownie.jpg");
+}
+
+#dsrt-four {
+    background-image: url("../images/Peanut-Butter-Cup-Ice-Cream.jpg");
+}
+
+#dsrt-five {
+    background-image: url("../images/Chocolate-Tartufo.jpg");
+}
+
+#dsrt-six {
+    background-image: url("../images/Red-Velvet-Cake.jpg");
+}
+
+#shke-one {
+    background-image: url("../images/vanilla-milkshake.jpg");
+}
+
+#shke-two {
+    background-image: url("../images/Cherry-Vanilla-Smoothie.jpg");
+}
+
+#shke-three {
+    background-image: url("../images/Oreo-Milkshake.jpg");
+}
+
+#shke-four {
+    background-image: url("../images/caramel-milkshake.jpg");
+}
+
+#shke-five {
+    background-image: url("../images/Mint-Chocolate-Brownie-Shake.JPG");
+}
+
+#shke-six {
+    background-image: url("../images/Blueberry-Milkshake.jpg");
 }
 
 .datetimes > .MonTue {
@@ -369,7 +448,14 @@ form > input[type="submit"] {
   }
 
   .food-pictures div {
+    width: 100%;
+  }
+
+  .food-pictures div > section h3 {
+    font-size: 1.2em;
     width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .Welcome > section ,
@@ -451,6 +537,13 @@ form > input[type="submit"] {
 
   .food-pictures div {
     width: 45%;
+  }
+
+  .food-pictures div > section h3 {
+    font-size: 1.0em;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .Opening-Hours > aside img {
