@@ -164,8 +164,7 @@ input, select, textarea {
 	}
 
 	h4 {
-		font-size: 1.1em;
-		line-height: 1.5em;
+		font-size: 1.35em;
 	}
 
 	h5 {
@@ -2248,10 +2247,6 @@ input, select, textarea {
 								transition: opacity 1s ease;
 			}
 
-			.avatar.noFade img {
-				opacity: 0;
-			}
-
 /* List */
 
 	ol {
@@ -2663,6 +2658,11 @@ input, select, textarea {
 			cursor: default;
 		}
 
+/* Fade In */
+	.noFade {
+		opacity: 0;
+	}
+
 /* Work Item */
 
 	.work-item {
@@ -2753,7 +2753,12 @@ input, select, textarea {
 		#header .image.avatar {
 			margin: 0 5em 1em 0;
 			width: 7.25em;
+		}
 
+		#header .inner {
+			-webkit-transition: opacity 3.5s ease; /* Safari, Chrome and Opera > 12.1 */
+				 -moz-transition: opacity 3.5s ease; /* Firefox < 16 */
+							transition: opacity 3.5s ease;
 		}
 
 
