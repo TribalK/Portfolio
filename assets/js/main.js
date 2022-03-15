@@ -117,7 +117,7 @@
 })(jQuery);
 
 setTimeout(function() {
-	document.querySelector('.avatar').classList.remove('noFade');
+	document.querySelector('.inner').classList.remove('noFade');
 }, 500);
 
 document.querySelector('#navbar').addEventListener('click', openDropdownMenu);
