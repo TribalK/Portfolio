@@ -30,7 +30,7 @@ window.windowHeight = window.innerHeight;
 window.windowWidth = window.innerWidth;
 
 /**
- * Match height 
+ * Match height
  */
 $('.row-eq-height > [class*="col-"]').matchHeight();
 
@@ -282,7 +282,7 @@ if(scrollTop >=  half) {
 	}
 
 });
-
+/*
 $('.onepage-nav').dropdownMenu({
     menuClass: 'onepage-menu',
     breakpoint: 1200,
@@ -294,6 +294,7 @@ $('.onepage-nav').dropdownMenu({
         toggleClass: 'active'
     }
 });
+*/
 
 $('.onepage-nav').onePageNav({
     currentClass: 'current-menu-item',
@@ -327,3 +328,7 @@ $('html,body').animate({
 
 })(jQuery);
 
+//The dropdown menu in the jQuery was not working for every screen width
+document.querySelector('.navbar-toggle').addEventListener('click', function() {
+	document.querySelector('.onepage-menu').classList.toggle('active');
+});
